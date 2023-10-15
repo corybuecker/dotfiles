@@ -1,5 +1,7 @@
 let mapleader=" "
 
+set cursorline
+set cursorlineopt=number
 set expandtab
 set nobackup
 set nowritebackup
