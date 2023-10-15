@@ -1,0 +1,20 @@
+let mapleader=" "
+
+set expandtab
+set nobackup
+set nowritebackup
+set number
+set shiftwidth=0
+set signcolumn=yes
+set softtabstop=-1
+set tabstop=2
+set updatetime=300
+
+lua << EOB
+  require('lazy-plugins')
+  require('treesitter-config')
+  require('colorscheme-config')
+  require('telescope-config')
+EOB
+
+source ~/.config/nvim/keys.vim

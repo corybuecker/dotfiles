@@ -1,0 +1,11 @@
+{
+  "codeLens.enable": true,
+  "languageserver": {
+    "elixirLS": {
+      "command": "/Users/corybuecker/.elixir-ls/release/language_server.sh",
+      "filetypes": ["elixir", "eelixir"]
+    }
+  },
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnType": true,
+}
