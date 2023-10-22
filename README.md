@@ -8,5 +8,5 @@
 1. Set Terminal background to any dark grey with white text.
 1. Copy `nvim` to `~/.config/nvim`.
 1. Copy `tmux.conf` to `~/.tmux.conf`.
-1. Install `tpm` with `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.
+1. Install `tpm` with `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`. Remember to run `<prefix> + CTRL I`.
 1. Install ElixirLS to `~/.elixir-ls`.

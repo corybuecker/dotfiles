@@ -1,11 +1,15 @@
 {
   "codeLens.enable": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
   "languageserver": {
     "elixirLS": {
       "command": "/Users/corybuecker/.elixir-ls/release/language_server.sh",
       "filetypes": ["elixir", "eelixir"]
-    }
+    },
+    "swift": {
+      "command": "/usr/bin/sourcekit-lsp",
+      "filetypes": ["swift"]
   },
   "coc.preferences.formatOnSave": true,
-  "coc.preferences.formatOnType": true,
 }

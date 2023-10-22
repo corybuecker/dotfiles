@@ -17,6 +17,8 @@ lua << EOB
   require('treesitter-config')
   require('colorscheme-config')
   require('telescope-config')
+
+  require('scratchpad')
 EOB
 
 source ~/.config/nvim/keys.vim
