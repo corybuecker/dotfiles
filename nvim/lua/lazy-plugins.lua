@@ -23,10 +23,6 @@ require('lazy').setup({
     build = ":TSUpdate"
   },
   {
-    "neoclide/coc.nvim",
-    build = "npm ci"
-  },
-  {
     "nvim-telescope/telescope-file-browser.nvim",
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   },
