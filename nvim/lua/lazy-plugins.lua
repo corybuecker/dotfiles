@@ -34,5 +34,7 @@ require('lazy').setup({
   "hrsh7th/cmp-cmdline",
   "hrsh7th/cmp-vsnip",
   "hrsh7th/vim-vsnip",
+  "vim-test/vim-test",
+  "github/copilot.vim",
 })
 
