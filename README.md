@@ -1,9 +1,9 @@
 # Development environment setup
 
 1. Install FiraCode Nerd Font from [https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads).
-1. Install `rust`, `node`, `tmux`, `neovim`, and `fd` with Homebrew.
+1. Install `ripgrep`, `rust`, `node`, `tmux`, `neovim`, and `fd` with Homebrew.
         
-        brew install rust node tmux neovim fd
+        brew install rust node tmux neovim fd ripgrep
 
 1. Set Terminal background to any dark grey with white text.
 1. Copy `nvim` to `~/.config/nvim`.

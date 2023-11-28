@@ -18,6 +18,7 @@ require('lazy').setup({
     "catppuccin/nvim",
     priority = 1000
   },
+  { "github/copilot.vim" },
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate"
@@ -27,14 +28,6 @@ require('lazy').setup({
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   },
   "nvim-tree/nvim-web-devicons",
-  "hrsh7th/nvim-cmp",
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-buffer",
-  "hrsh7th/cmp-path",
-  "hrsh7th/cmp-cmdline",
-  "hrsh7th/cmp-vsnip",
-  "hrsh7th/vim-vsnip",
   "vim-test/vim-test",
-  "github/copilot.vim",
 })
 
