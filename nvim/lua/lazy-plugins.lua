@@ -29,5 +29,6 @@ require('lazy').setup({
   },
   "nvim-tree/nvim-web-devicons",
   "vim-test/vim-test",
+  "duane9/nvim-rg"
 })
 
