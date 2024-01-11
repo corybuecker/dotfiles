@@ -1,2 +1,13 @@
-require("telescope").setup()
+require("telescope").setup({
+  extensions = {
+    file_browser = {
+      auto_depth = true,
+      select_buffer = true,
+      hidden = {
+        file_browser = true,
+        folder_browser = true
+      }
+    }
+  }
+})
 require("telescope").load_extension "file_browser"
