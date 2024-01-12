@@ -38,3 +38,11 @@ vim.api.nvim_create_autocmd({ "BufWritePre", "FileWritePre" }, {
     vim.lsp.buf.format()
   end
 })
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  pattern = { "*.swift" },
+  
+  callback = function()
+    vim.cmd(":silent exec \"!swift-format -i %\"")
+  end
+})
