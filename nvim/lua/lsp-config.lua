@@ -17,9 +17,8 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = { 'swift' },
   callback = function()
     local root_dir = vim.fs.dirname(vim.fs.find({
- 			"Package.swift",
- 			".git",
- 		}, { upward = false })[1])
+ 			"buildServer.json",
+ 		}, { upward = true })[1])
     
     local client = vim.lsp.start({
        name = 'sourcekit',
@@ -31,18 +30,3 @@ vim.api.nvim_create_autocmd("FileType", {
   end
 })
 
-vim.api.nvim_create_autocmd({ "BufWritePre", "FileWritePre" }, {
-  pattern = { "*.ex", "*.exs", "*.heex" },
-  
-  callback = function()
-    vim.lsp.buf.format()
-  end
-})
-
-vim.api.nvim_create_autocmd({ "BufWritePost" }, {
-  pattern = { "*.swift" },
-  
-  callback = function()
-    vim.cmd(":silent exec \"!swift-format -i %\"")
-  end
-})

@@ -19,6 +19,7 @@ lua << EOB
   require('telescope-config')
   require('keymaps-config')
   require('lsp-config')
+  require('conform-config')
   
   require('scratchpad')
 EOB

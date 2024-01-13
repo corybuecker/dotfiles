@@ -28,7 +28,9 @@ require('lazy').setup({
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   },
   "nvim-tree/nvim-web-devicons",
-  "vim-test/vim-test",
-  "duane9/nvim-rg"
+  {
+    'stevearc/conform.nvim',
+    opts = {},
+  },
 })
 
