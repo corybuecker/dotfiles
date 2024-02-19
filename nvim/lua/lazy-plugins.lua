@@ -32,5 +32,6 @@ require('lazy').setup({
     'stevearc/conform.nvim',
     opts = {},
   },
+  'duane9/nvim-rg',
 })
 

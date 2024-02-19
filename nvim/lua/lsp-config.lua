@@ -30,3 +30,19 @@ vim.api.nvim_create_autocmd("FileType", {
   end
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { 'ruby' },
+  callback = function()
+    local root_dir = vim.fs.dirname(vim.fs.find({
+ 			"Gemfile.lock",
+ 		}, { upward = true })[1])
+    
+    local client = vim.lsp.start({
+       name = 'sorbet',
+       cmd = {'/Users/corybuecker/.rbenv/shims/bundle', 'exec', 'srb', 'tc', '--lsp'},
+       root_dir = root_dir,
+    })
+
+    vim.lsp.buf_attach_client(0, client)
+  end
+})
