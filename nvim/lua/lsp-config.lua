@@ -46,3 +46,20 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.lsp.buf_attach_client(0, client)
   end
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { 'javascript', 'typescript' },
+  callback = function()
+    local root_dir = vim.fs.dirname(vim.fs.find({
+ 			"package.json",
+ 		}, { upward = true })[1])
+    
+    local client = vim.lsp.start({
+       name = 'typescript-language-server',
+       cmd = {'/opt/homebrew/bin/typescript-language-server', '--stdio'},
+       root_dir = root_dir,
+    })
+
+    vim.lsp.buf_attach_client(0, client)
+  end
+})
