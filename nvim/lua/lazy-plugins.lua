@@ -18,7 +18,7 @@ require('lazy').setup({
     "catppuccin/nvim",
     priority = 1000
   },
-  { "github/copilot.vim" },
+  -- { "github/copilot.vim" },
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate"
@@ -33,5 +33,14 @@ require('lazy').setup({
     opts = {},
   },
   'duane9/nvim-rg',
+
+  -- CMP plugins
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-path',
+  'hrsh7th/cmp-cmdline',
+  'hrsh7th/nvim-cmp',
+  'hrsh7th/cmp-vsnip',
+  'hrsh7th/vim-vsnip',
 })
 

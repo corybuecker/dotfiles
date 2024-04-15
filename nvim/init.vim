@@ -14,12 +14,12 @@ set updatetime=300
 
 lua << EOB
   require('lazy-plugins')
-  require('treesitter-config')
+
+  require('cmp-config')
   require('colorscheme-config')
-  require('telescope-config')
+  require('conform-config')
   require('keymaps-config')
   require('lsp-config')
-  require('conform-config')
-  
-  require('scratchpad')
+  require('telescope-config')
+  require('treesitter-config')
 EOB
