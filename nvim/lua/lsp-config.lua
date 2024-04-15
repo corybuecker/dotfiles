@@ -63,3 +63,20 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.lsp.buf_attach_client(0, client)
   end
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { 'svelte' },
+  callback = function()
+    local root_dir = vim.fs.dirname(vim.fs.find({
+ 			"package.json",
+ 		}, { upward = true })[1])
+    
+    local client = vim.lsp.start({
+       name = 'svelte-language-server',
+       cmd = {'npx', 'svelteserver', '--stdio'},
+       root_dir = root_dir,
+    })
+
+    vim.lsp.buf_attach_client(0, client)
+  end
+})
