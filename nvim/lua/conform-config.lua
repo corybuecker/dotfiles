@@ -5,6 +5,9 @@ require("conform").setup({
     xml = { "xmllint" },
     ruby = { "rufo" },
     eruby = { "erb_format" },
+    svelte = { "prettier" },
+    javascript = { "prettier" },
+    typescript = { "prettier" },
   },
 })
 
