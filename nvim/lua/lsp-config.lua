@@ -5,7 +5,7 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     local client = vim.lsp.start({
        name = 'elixir',
-       cmd = {'/Users/corybuecker/.elixir-ls/release/language_server.sh'},
+       cmd = {'/Users/corybuecker/.elixir-ls/language_server.sh'},
        root_dir = vim.fs.dirname(vim.fs.find({'mix.exs'}, { upward = false })[1]),
     })
 
@@ -50,13 +50,11 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { 'javascript', 'typescript' },
   callback = function()
-    local root_dir = vim.fs.dirname(vim.fs.find({
- 			"package.json",
- 		}, { upward = true })[1])
+    local root_dir = vim.fs.dirname(vim.fs.find({ "package.json" })[1])
     
     local client = vim.lsp.start({
        name = 'typescript-language-server',
-       cmd = {'/opt/homebrew/bin/typescript-language-server', '--stdio'},
+       cmd = {'npx', 'typescript-language-server', '--stdio'},
        root_dir = root_dir,
     })
 
@@ -67,9 +65,7 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { 'svelte' },
   callback = function()
-    local root_dir = vim.fs.dirname(vim.fs.find({
- 			"package.json",
- 		}, { upward = true })[1])
+    local root_dir = vim.fs.dirname(vim.fs.find({ "package.json" })[1])
 
     local client = vim.lsp.start({
        name = 'svelte-language-server',
