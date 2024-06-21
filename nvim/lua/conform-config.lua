@@ -8,6 +8,7 @@ require("conform").setup({
     svelte = { "prettier" },
     javascript = { "prettier" },
     typescript = { "prettier" },
+    rust = { "rustfmt" }
   },
 })
 
