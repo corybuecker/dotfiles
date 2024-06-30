@@ -6,6 +6,7 @@ vim.keymap.set('n', '<leader>b', ':buffers<CR>:buffer<Space>')
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = args.buf })
+    vim.lsp.inlay_hint.enable(true)
   end
 })
 
