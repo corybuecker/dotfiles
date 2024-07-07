@@ -1,0 +1,10 @@
+require("config.lazy")
+
+require("config.colorscheme")
+require("config.conform")
+require("config.keymaps")
+require("config.telescope")
+require("config.treesitter")
+require("config.vim")
+require("config.cmp")
+require("config.lsp")

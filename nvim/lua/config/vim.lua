@@ -1,0 +1,11 @@
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
+vim.opt.expandtab = true
+vim.g.nobackup = true
+vim.g.nowritebackup = true
+vim.opt.number = true
+vim.opt.shiftwidth = 0
+vim.opt.signcolumn = yes
+vim.opt.softtabstop = -1
+vim.opt.tabstop = 2
+vim.opt.updatetime = 300
