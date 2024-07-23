@@ -1,2 +1,2 @@
-vim.keymap.set("n", "<leader>fb", ":Telescope file_browser path=%:p:h <CR>")
-vim.keymap.set("n", "<leader>b", ":buffers<CR>:buffer<Space>")
+vim.keymap.set("n", "<leader>fb", require("fzf-lua").files)
+vim.keymap.set("n", "<leader>b", require("fzf-lua").buffers)

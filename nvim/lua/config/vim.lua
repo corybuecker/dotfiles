@@ -9,3 +9,4 @@ vim.opt.signcolumn = yes
 vim.opt.softtabstop = -1
 vim.opt.tabstop = 2
 vim.opt.updatetime = 300
+vim.opt.relativenumber = true
