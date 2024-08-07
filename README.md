@@ -5,6 +5,10 @@
         
         brew install rust node tmux neovim fd ripgrep luarocks fzf bat
 
+1. Install djlint in the local virtualenv.
+
+        pip install djlint
+
 1. Set Terminal background to any dark grey with white text.
 1. Copy `nvim` to `~/.config/nvim`.
 1. Copy `alacritty` to `~/.config/alacritty`.
