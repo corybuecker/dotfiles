@@ -1,4 +1,5 @@
 require("config.lazy")
+require("config.autocmd")
 
 require("config.colorscheme")
 require("config.conform")
@@ -6,5 +7,6 @@ require("config.keymaps")
 require("config.fzf")
 require("config.treesitter")
 require("config.vim")
+require("config.parrot")
 require("config.cmp")
 require("config.lsp")

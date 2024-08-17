@@ -3,6 +3,8 @@ require("conform").setup({
 		lua = { "stylua" },
 		rust = { "rustfmt" },
 		htmldjango = { "djlint" },
+		html = { "djlint" },
+		swift = { "swift_format" },
 	},
 	format_on_save = {
 		lsp_format = "fallback",

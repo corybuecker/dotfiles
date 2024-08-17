@@ -19,3 +19,22 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.lsp.inlay_hint.enable(true)
 	end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "swift",
+	callback = function(ev)
+		local client = vim.lsp.start({
+			name = "sourcekit-lsp",
+			cmd = { "sourcekit-lsp" },
+			root_dir = vim.fs.root(ev.buf, { "project.yml" }),
+			capabilities = capabilities,
+		})
+
+		vim.lsp.buf_attach_client(ev.buf, client)
+
+		vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf })
+		vim.keymap.set("n", "ga", vim.lsp.buf.code_action, { buffer = ev.buf })
+
+		vim.lsp.inlay_hint.enable(true)
+	end,
+})
