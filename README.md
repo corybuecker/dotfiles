@@ -3,7 +3,7 @@
 1. Install FiraCode Nerd Font from [https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads).
 1. Install `ripgrep`, `rust`, `node`, `tmux`, `soucekit-lsp`, `neovim`, and `fd` with Homebrew.
         
-        brew install rust node tmux neovim fd ripgrep luarocks fzf bat
+        brew install rustup node tmux neovim fd ripgrep luarocks fzf bat swift-format zsh-syntax-highlighting
 
 1. Install djlint in the local virtualenv.
 
