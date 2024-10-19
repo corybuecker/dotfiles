@@ -11,11 +11,17 @@ family = "FiraCode Nerd Font"
 [env]
 TERM = "xterm-256color"
 
+[keyboard]
+bindings = [
+  { key = "Left", mods = "Command", chars = "\u001BB" },
+  { key = "Right", mods = "Command", chars = "\u001BF" }
+]
+
 [window]
 decorations = "buttonless"
 startup_mode = "Maximized"
 dynamic_padding = false
-opacity = 0.95
+opacity = 0.93
 blur = true
 
 [window.padding]
