@@ -10,3 +10,4 @@ vim.opt.softtabstop = -1
 vim.opt.tabstop = 2
 vim.opt.updatetime = 300
 vim.opt.relativenumber = true
+vim.opt.grepprg = "rg --vimgrep"

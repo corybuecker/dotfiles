@@ -1,1 +1,1 @@
-vim.cmd([[let @d = 'yodebug!("🚧 {:#?}", pa);']])
+vim.cmd([[let @d = 'yoprintln!("🚧 {:#?}", pa);']])
