@@ -6,5 +6,5 @@ return {
 	"nvim-tree/nvim-web-devicons",
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
-	{ "frankroeder/parrot.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+	"github/copilot.vim",
 }
